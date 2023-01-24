@@ -1,6 +1,6 @@
 var admin = require("firebase-admin");
 var express = require("express");
-var serviceAccount = require("./chatterbox-c7b80-firebase-adminsdk-lc5jm-06fe340b3f.json");
+// var serviceAccount = require("./chatterbox-c7b80-firebase-adminsdk-lc5jm-06fe340b3f.json");
 var sa = {
   "type": "service_account",
   "project_id": "chatterbox-c7b80",
