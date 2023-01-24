@@ -6,11 +6,11 @@ var api = express();
 
 api.use(express.json());
 
-const HOST = "192.168.0.101";
-const PORT = "8888";
+const PORT = process.env.PORT || 5000;
+
 
 api.listen(PORT, (req, res) => {
-  console.log(`API RUNNING AT http://${HOST}:${PORT}`);
+  console.log(`listening on port ${PORT}`);
 });
 
 api.get("/", (req, res) => {
