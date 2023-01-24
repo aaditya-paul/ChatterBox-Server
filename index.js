@@ -37,7 +37,7 @@ api.get("/", (req, res) => {
 
 api.post("/data", (req, res) => {
   res.send("success");
-  // console.log(req.body);
+  console.log(req.body);
   var token = req.body.token;
   var message = req.body.message;
   var sender = req.body.sender;
@@ -60,7 +60,7 @@ async function send(msg, sender, token) {
           title: sender,
           body: msg,
           channelId: "highandsound",
-          sound:"mixkit-sci-fi-reject-notification-896.wav",
+          sound:"notification.wav",
           color: '#075E54',
           },
        
